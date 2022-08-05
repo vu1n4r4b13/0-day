@@ -1,0 +1,68 @@
+*  body{background-color: rgba(202, 202, 201, 0.94); }
+body{background-image:url(https://onlyvectorbackgrounds.com/wp-content/uploads/2019/03/Gradient-Abstract-Shapes-Background-Purple.jpg); background-repeat:no-repeat; background-size:200vh;}
+
+
+                     /* NAV STYLE */
+
+.navUL{display:flex; text-decoration:none; list-style:none; border: solid 1px black; }
+
+nav , .logo{width:100%; padding: 0%; height:max-content; background-position: center; background-color:transparent; overflow:auto; text-decoration:none;list-style:none;  color: rgb(255, 255, 255); }
+a{text-decoration: none;  list-style:none;  color: rgb(255, 255, 255);}
+
+.home , .about , a:hover , .contact {margin-right: 50px; font-size:3.5vw; font-style: italic; font-family: 'Courier New', Courier, monospace; transition: 1s ease-in ;}
+.home:hover , .about:hover , a:hover , .contact:hover{color:rgb(0, 0, 0);  text-decoration-line:underline;
+    text-decoration-style:dotted; text-decoration-thickness:2px;} 
+
+                 /*           img styling  */
+
+    .img{overflow: auto;}
+    .logo{ height: 5rem; width:150rem; border-radius:100% ;margin-left: 27%; max-width:fit-content; max-height: fit-content;}
+
+    .end{position:absolute; top: 90%;  text-align: end;}
+
+    .logo{animation-name:logo; animation-duration:4s; ;}
+
+    @keyframes logo {
+ 
+   25% {transform:rotatey(160deg) }
+   50% {transform:rotatex(160deg);}
+    
+}
+
+          /* TYPING EFFECT  */
+
+  .typewriter h1 {
+    position: absolute; 
+    text-shadow: rgba(198, 138, 27, 0.603) 2px 4px 5px;
+    left: 25%;
+    top: 50%;
+    position: fixed;
+    font-size:2vw;
+    max-width: fit-content;
+    color:rgb(68, 66, 66);
+    font-family:'Courier New', Courier, monospace;
+    font-weight:lighter;
+    font-style: italic;
+    overflow: hidden;
+    border-right: .15em solid orange; 
+    white-space:nowrap;
+    margin: auto;
+    letter-spacing: .10em; 
+    animation: 
+      typing 3.5s steps(50, end),
+      blink-caret .3s step-end infinite;
+  }
+  
+  /* The typing effect */
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+  }
